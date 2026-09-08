@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --canvas: #f9f9f8;
+        --surface: #ffffff;
+        --brand: #1b362f;
+        --brand-hover: #2c5248;
+        --brand-soft: #e6eeea;
+        --clay: #c87961;
+        --clay-soft: #f7ece7;
+        --ink: #1a1d1c;
+        --muted-ink: #646967;
+        --line: #e5e7e5;
+        --wa: #1f8b5a;
+
+        --background: 60 8% 97%;
+        --foreground: 150 6% 11%;
+        --card: 0 0% 100%;
+        --card-foreground: 150 6% 11%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 150 6% 11%;
+        --primary: 164 33% 16%;
+        --primary-foreground: 0 0% 100%;
+        --secondary: 14 48% 58%;
+        --secondary-foreground: 0 0% 100%;
+        --muted: 120 4% 94%;
+        --muted-foreground: 156 2% 40%;
+        --accent: 160 20% 92%;
+        --accent-foreground: 164 33% 16%;
+        --destructive: 0 72% 42%;
+        --destructive-foreground: 0 0% 100%;
+        --border: 120 4% 90%;
+        --input: 120 4% 86%;
+        --ring: 164 33% 16%;
+        --chart-1: 164 33% 16%;
+        --chart-2: 14 48% 58%;
+        --chart-3: 153 64% 33%;
+        --chart-4: 43 60% 55%;
+        --chart-5: 220 10% 60%;
+        --radius: 0.75rem;
+    }
+
+    .admin-shell {
+        --background: 120 4% 96%;
+        --border: 220 13% 91%;
+        --input: 220 13% 88%;
+        --muted: 220 14% 96%;
+        --muted-foreground: 220 9% 46%;
+        --foreground: 221 39% 11%;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+        @apply bg-background text-foreground antialiased;
+        font-feature-settings: 'ss01', 'cv11';
+    }
+
+    h1, h2, h3, h4 {
+        @apply tracking-tight;
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--brand);
+        outline-offset: 2px;
+    }
+
+    ::selection {
+        background: var(--brand-soft);
+        color: var(--brand);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}
+
+@layer components {
+    .container-x {
+        @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-12;
+    }
+    .eyebrow {
+        @apply text-xs font-semibold uppercase tracking-[0.18em] text-clay;
+    }
+    .display {
+        @apply font-serif font-medium leading-[1.05] tracking-tight text-ink;
+    }
+    .surface {
+        @apply rounded-xl border border-line bg-white;
+    }
+    .reveal {
+        animation: rise 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    .reveal-delay-1 { animation-delay: 80ms; }
+    .reveal-delay-2 { animation-delay: 160ms; }
+    .reveal-delay-3 { animation-delay: 240ms; }
+    .lift {
+        @apply transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md;
+    }
+    .grain::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        opacity: 0.35;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E");
+    }
+    .admin-table th {
+        @apply h-10 px-3 text-left text-xs font-semibold uppercase tracking-wide text-muted-foreground;
+    }
+    .admin-table td {
+        @apply px-3 py-2.5 text-sm align-middle;
+    }
+}
+
+@keyframes rise {
+    from { opacity: 0; transform: translateY(14px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+[data-debug-wrapper="true"] {
+    display: contents !important;
+}

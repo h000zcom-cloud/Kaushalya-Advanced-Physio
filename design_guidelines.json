@@ -1,0 +1,133 @@
+{
+  "theme": "ORGANIC & EARTHY / PREMIUM HEALTHCARE",
+  "philosophy": "Premium healthcare branding + modern wellness + high-end SaaS + editorial typography + human photography. 'Never make the patient operate the clinic's internal system.' Do not over-design. Do not use excessive animations, gradients, or glassmorphism. White space intelligently used.",
+  "typography": {
+    "fonts": [
+      {
+        "name": "Spectral",
+        "type": "heading",
+        "context": "Marketing (Editorial, Trust, High-end Wellness)",
+        "weights": [400, 500, 600, 700]
+      },
+      {
+        "name": "Manrope",
+        "type": "heading",
+        "context": "Admin/SaaS (Data, Clarity, Structure)",
+        "weights": [500, 600, 700, 800]
+      },
+      {
+        "name": "DM Sans",
+        "type": "body",
+        "context": "Universal (Readable, Friendly, Legible)",
+        "weights": [400, 500, 600]
+      }
+    ],
+    "guidelines": "Avoid Inter, Roboto, and Space Grotesk. Use Spectral for marketing headings (e.g., Hero, Section titles) to create a premium editorial feel. Use Manrope for admin dashboards to maximize data clarity. Use DM Sans for all body text. Apply tracking-tight to headings and leading-relaxed to body text."
+  },
+  "colors": {
+    "marketing": {
+      "background": "#F9F9F8",
+      "surface": "#FFFFFF",
+      "primary": "#1B362F",
+      "primary_hover": "#2C5248",
+      "secondary": "#C87961",
+      "text_main": "#1A1D1C",
+      "text_muted": "#646967",
+      "whatsapp": "#1F8B5A",
+      "border": "#E5E7E5"
+    },
+    "admin": {
+      "background": "#F4F5F4",
+      "sidebar_bg": "#FFFFFF",
+      "surface": "#FFFFFF",
+      "text_main": "#111827",
+      "text_muted": "#6B7280",
+      "border": "#E5E7EB",
+      "primary": "#1B362F"
+    },
+    "status_badges": {
+      "NEW": { "bg": "#EFF6FF", "text": "#1D4ED8", "border": "#BFDBFE" },
+      "CONTACTED": { "bg": "#F5F3FF", "text": "#6D28D9", "border": "#DDD6FE" },
+      "CONFIRMED": { "bg": "#ECFDF5", "text": "#047857", "border": "#A7F3D0" },
+      "ASSIGNED": { "bg": "#EEF2FF", "text": "#4338CA", "border": "#C7D2FE" },
+      "COMPLETED": { "bg": "#F0FDFA", "text": "#0F766E", "border": "#99F6E4" },
+      "CANCELLED": { "bg": "#FEF2F2", "text": "#B91C1C", "border": "#FECACA" },
+      "NO_SHOW": { "bg": "#FFF7ED", "text": "#C2410C", "border": "#FED7AA" },
+      "RESCHEDULED": { "bg": "#FFFBEB", "text": "#B45309", "border": "#FDE68A" }
+    },
+    "capacity": {
+      "Available": { "bg": "#ECFDF5", "text": "#047857" },
+      "Limited": { "bg": "#FFFBEB", "text": "#B45309" },
+      "Full": { "bg": "#FEF2F2", "text": "#B91C1C" }
+    }
+  },
+  "visual_enhancers": {
+    "spacing_scale": "Use generous spacing. For marketing, p-8, py-16, py-24. For admin, p-4, p-6, gap-4, gap-6.",
+    "border_radius": "Cards: rounded-xl (12px). Buttons: rounded-lg. Inputs: rounded-md. Admin tables: rounded-md. Avoid excessive pill shapes.",
+    "shadows": "Subtle and grounded. Marketing cards: shadow-sm to shadow-md. Floating nav: shadow-sm. Admin: borders preferred over shadows, shadow-sm for active widgets.",
+    "motion": "Subtle only. Hover: -translate-y-0.5. Micro-interactions on buttons. NO excessive parallax or bouncy scroll animations.",
+    "transparency": "DO NOT use completely transparent backgrounds under text or in headers over images. Use solid or heavily blurred (backdrop-blur-xl bg-white/80) surfaces."
+  },
+  "component_specs": {
+    "buttons": "Primary: Solid #1B362F text-white. Secondary: Solid #C87961 text-white. Tertiary/Outline: border-border text-text_main.",
+    "inputs": "Clean, 1px border (#E5E7EB), focus:ring-2 focus:ring-[#1B362F].",
+    "cards": "White surface, 1px border-border, subtle padding (p-6 or p-8).",
+    "badges": "Small, rounded-full, px-2.5 py-0.5, text-xs font-semibold.",
+    "tables": "Admin tables must be compact but readable, text-sm, left-aligned, sticky headers if scrollable.",
+    "modals_drawers": "Use right-side Drawers for Admin appointment details. Use Modals for confirmations.",
+    "booking_wizard": "Step-based logic. Show clear progress. Mobile-first grid for time slots.",
+    "mobile_action_bar": "Sticky fixed bottom bar for mobile. h-16, z-50. 3 equal tabs: Call, WhatsApp, Book."
+  },
+  "layouts": {
+    "marketing": "Asymmetric bento grids for features, heavy reliance on negative space, wide containers (max-w-7xl).",
+    "admin": "Classic high-density SaaS layout. Fixed left sidebar (w-64), top header (h-16), scrollable main content area with max-w-full."
+  },
+  "images": [
+    {
+      "url": "https://images.unsplash.com/photo-1649751361457-01d3a696c7e6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwxfHxwaHlzaW90aGVyYXB5JTIwcGF0aWVudCUyMHRyZWF0bWVudHxlbnwwfHx8fDE3ODg4NDY5OTR8MA&ixlib=rb-4.1.0&q=85",
+      "category": "Hero / What brings you here",
+      "description": "Doctor examining leg. Professional, clinical yet human."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1706353399656-210cca727a33?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxwaHlzaW90aGVyYXB5JTIwcGF0aWVudCUyMHRyZWF0bWVudHxlbnwwfHx8fDE3ODg4NDY5OTR8MA&ixlib=rb-4.1.0&q=85",
+      "category": "Services / Therapy",
+      "description": "Back massage/therapy session."
+    },
+    {
+      "url": "https://images.pexels.com/photos/7789616/pexels-photo-7789616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "category": "Clinic Environment",
+      "description": "Minimalist premium medical examination room."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1787496994323-59ac5cff09f9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1ODB8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzg4ODQ2OTk0fDA&ixlib=rb-4.1.0&q=85",
+      "category": "Clinic Waiting Area",
+      "description": "Cream armchairs against wood slatted wall. Premium feel."
+    },
+    {
+      "url": "https://images.unsplash.com/photo-1645005513713-9e2b92a687d3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwyfHxwaHlzaWNhbCUyMHRoZXJhcHklMjBleGVyY2lzZXxlbnwwfHx8fDE3ODg4NDY5OTR8MA&ixlib=rb-4.1.0&q=85",
+      "category": "Patient Journey / Rehab",
+      "description": "Physical therapy exercises with weights."
+    }
+  ],
+  "accessibility": {
+    "focus": "Visible focus states on all interactive elements (focus:ring-2 focus:ring-offset-2).",
+    "contrast": "Ensure minimum 4.5:1 ratio for text. No light gray text on white backgrounds.",
+    "motion": "Respect prefers-reduced-motion media query.",
+    "semantics": "Use semantic HTML tags (nav, main, section, article, header, footer)."
+  },
+  "testing": {
+    "attributes": "All interactive and key informational elements MUST include a 'data-testid' attribute (e.g., data-testid='book-appointment-button')."
+  },
+  "instructions_to_main_agent": [
+    "You have .js files, NOT .tsx files. Write React components using JSX syntax but in .js extensions.",
+    "Do not use placeholder image domains. ONLY use the provided Unsplash/Pexels URLs or UI icons.",
+    "Implement lucide-react for all iconography.",
+    "Build the public site and admin dashboard within a unified router (e.g., React Router) with clear path separation (/ for marketing, /admin for dashboard).",
+    "Ensure mobile responsiveness is prioritized. The booking flow must be usable with one hand.",
+    "Admin capacity views should clearly show '09:00-10:00 18/20 booked FULL'.",
+    "Do not invent fake logos; use text-based branding 'Kaushalya Advanced Physio' in the Spectral font if a logo image is unavailable.",
+    "Use Shadcn UI components but heavily customize their default Vercel-like appearance to match the Organic & Earthy aesthetic.",
+    "Do NOT use completely transparent backgrounds under text or in dropdowns."
+  ],
+  "UNIVERSAL GUIDELINES FOR MAIN AGENT": "You tend to converge toward generic, 'on distribution' outputs. Avoid this: make creative, distinctive frontends that surprise and delight. Create depth through layered design elements with z-index hierarchy. NEVER use AI assistant Emoji characters like robot, brain, etc. for icons. Use 2-3x more spacing than feels comfortable. Every interaction needs micro-animations (excluding generic transition:all). Use Sonner for toasts."
+}
